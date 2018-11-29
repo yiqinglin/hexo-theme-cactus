@@ -1,0 +1,91 @@
+#newsletter
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-flow: column
+  margin-top: 50px
+  .wrapper
+    width: 100%
+    align-items: left
+  h2
+    font-size: 0.9rem
+    margin: 0
+  p
+    margin: 0
+    &.promise
+      margin-top: 14px
+      font-size: 12px
+  .mc-field-group
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 100%
+    max-width: 400px
+    position: relative
+  .required.email
+    color: $color-text
+    flex: 1 0 80%
+    width: 100%
+    border: none
+    padding: 10px 5px
+    outline: none
+    font-size: 16px
+    transition: all .2s ease-in-out
+    font-family: Roboto
+    font-weight: 300
+    border-bottom: 1px solid hsl(0, 0%, 80%)
+    border-radius: 0
+    background-color: transparent
+    &:focus
+      border-bottom: 1px solid $color-accent-1
+    &.mce_inline_error
+      border-bottom: 1px solid $color-quote
+  .button
+    display: inline-block
+    flex: 1 0 20%
+    border: none
+    padding: 10px 5px
+    margin: 0
+    text-decoration: none
+    background: none
+    color: $color-meta
+    font-size: 0.9rem
+    cursor: pointer
+    text-align: center
+    -webkit-appearance: none
+    -moz-appearance: none
+    &:hover,
+    &:focus
+      color: $color-accent-1
+    &:active
+      transform: scale(0.99)
+#mc_embed_signup div.mce_inline_error
+  padding-left: 0 !important
+  color: $color-quote !important
+  background: none !important
+  position: absolute
+  top: 40px
+#mce-responses
+  position: absolute
+  top: 40px
+.seperator-positioner
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+.seperator
+  margin-top: 40px
+  border-top: 1px solid #333
+  width: 90%
+@media (min-width: 39rem)
+  #newsletter
+    margin-top: 50px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    align-content: center
+    margin-bottom: 20px
+    .wrapper
+      display: flex
+      align-items: center
+      justify-content: space-between
